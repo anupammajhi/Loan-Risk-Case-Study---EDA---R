@@ -26,3 +26,4 @@ loanData <- loanData[,colSums(is.na(loanData)) != nrow(loanData)]
 
 # By comparing total num of NA in a row with total num of rows in dataframe
 loanData <-loanData[rowSums(is.na(loanData)) != ncol(loanData),]
+
