@@ -5,3 +5,9 @@ library(gdata)
 library(magrittr)
 library(dplyr)
 library(stringr)
+
+# Unzip compressed file. Not required if already extracted
+# unzip("loan.zip")
+
+# Read CSV File
+loanData <- read.csv("Loan_Dataset.csv",na.strings=c("","NA"),stringsAsFactors = F) #Also replaces blanks with NA
