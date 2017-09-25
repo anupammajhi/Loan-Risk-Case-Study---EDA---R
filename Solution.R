@@ -11,3 +11,10 @@ library(stringr)
 
 # Read CSV File
 loanData <- read.csv("Loan_Dataset.csv",na.strings=c("","NA"),stringsAsFactors = F) #Also replaces blanks with NA
+
+
+#======= Data Cleaning and Preparation ========
+
+# ---- .. Remove Irrelevant Data .. ----
+
+# Get rid of columns with all NA values
