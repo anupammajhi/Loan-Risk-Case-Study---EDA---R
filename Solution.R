@@ -18,3 +18,11 @@ loanData <- read.csv("Loan_Dataset.csv",na.strings=c("","NA"),stringsAsFactors =
 # ---- .. Remove Irrelevant Data .. ----
 
 # Get rid of columns with all NA values
+
+# By comparing total num of NA in a column with total num of rows in dataframe
+loanData <- loanData[,colSums(is.na(loanData)) != nrow(loanData)]
+
+# Get rid of rows with all NA values  
+
+# By comparing total num of NA in a row with total num of rows in dataframe
+loanData <-loanData[rowSums(is.na(loanData)) != ncol(loanData),]
