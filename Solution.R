@@ -35,3 +35,4 @@ loanData <-loanData[rowSums(is.na(loanData)) != ncol(loanData),]
 Vague_Columns <- names(which(lapply(loanData,function(x){length(levels(as.factor(x)))}) == 1))
 Vague_Columns
 
+# url: no new data that can be obtained
