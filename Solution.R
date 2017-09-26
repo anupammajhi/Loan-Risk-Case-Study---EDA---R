@@ -36,3 +36,12 @@ Vague_Columns <- names(which(lapply(loanData,function(x){length(levels(as.factor
 Vague_Columns
 
 # url: no new data that can be obtained
+Vague_Columns <- append(Vague_Columns,"url")
+
+# id and member_id
+loanData[which(duplicated(loanData$id)),] # 0 Duplicates, hence unique
+loanData[which(duplicated(loanData$member_id)),]  # 0 Duplicates, hence unique
+# Since both id and member_id are unique, we will exclude member_id
+
+# funded_amnt_inv, out_prncp_inv, total_pymnt_inv : Not required for this analysis as we are not analysing investor's action
+# desc, purpose and title : purpose is a better categorical variable for this study, as desc and title are quite random. Hence just use purpose and remove others.
