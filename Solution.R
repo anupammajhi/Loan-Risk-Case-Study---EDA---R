@@ -46,3 +46,4 @@ loanData[which(duplicated(loanData$member_id)),]  # 0 Duplicates, hence unique
 # funded_amnt_inv, out_prncp_inv, total_pymnt_inv : Not required for this analysis as we are not analysing investor's action
 # desc, purpose and title : purpose is a better categorical variable for this study, as desc and title are quite random. Hence just use purpose and remove others.
 # emp_title : not relevant for this analysis
+Vague_Columns <- append(Vague_Columns,c("member_id","funded_amnt_inv","out_prncp_inv","total_pymnt_inv",
