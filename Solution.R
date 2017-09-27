@@ -57,3 +57,4 @@ loanData <- loanData[,!names(loanData) %in% Vague_Columns]
 #---- .. Data Consistency .. ----  
 
 # Convert All characters to upper case to maintain consistency in cases
+loanData <- data.frame(lapply(loanData, function(x){
