@@ -47,3 +47,9 @@ loanData[which(duplicated(loanData$member_id)),]  # 0 Duplicates, hence unique
 # desc, purpose and title : purpose is a better categorical variable for this study, as desc and title are quite random. Hence just use purpose and remove others.
 # emp_title : not relevant for this analysis
 Vague_Columns <- append(Vague_Columns,c("member_id","funded_amnt_inv","out_prncp_inv","total_pymnt_inv",
+                                        "desc","title","emp_title"))
+# last_credit_pull_d,next_pymnt_d,last_pymnt_amnt,last_pymnt_d,collection_recovery_fee,recoveries,out_prncp : not relevant for this analysis, as these variables are helpful only post default or full payment
+Vague_Columns <- append(Vague_Columns,c("last_credit_pull_d","next_pymnt_d","last_pymnt_amnt","last_pymnt_d","collection_recovery_fee","recoveries","out_prncp"))
+
+# Removing unnecessary columns from dataframe saved as list "Vague_Columns"
+loanData <- loanData[,!names(loanData) %in% Vague_Columns]
