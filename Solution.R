@@ -66,3 +66,9 @@ loanData <- data.frame(lapply(loanData, function(x){
 }),stringsAsFactors = F)
 
 # Check for spelling issues and inconsistency
+
+lapply(loanData,function(x){
+  if(is.character(x))
+  {
+    return(unique(x))
+  }
