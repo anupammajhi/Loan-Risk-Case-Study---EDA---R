@@ -60,3 +60,9 @@ loanData <- loanData[,!names(loanData) %in% Vague_Columns]
 loanData <- data.frame(lapply(loanData, function(x){
   if(is.character(x)){
     return(toupper(x))
+  }else{
+    return(x)
+  }
+}),stringsAsFactors = F)
+
+# Check for spelling issues and inconsistency
