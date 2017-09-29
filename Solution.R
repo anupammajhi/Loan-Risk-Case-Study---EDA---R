@@ -80,3 +80,4 @@ lapply(loanData,function(x){
 names(which(lapply(loanData,function(x){sum(is.na(x))}) > 0))
 
 # No need to impute the NA's. NA is correctly assigned
+
