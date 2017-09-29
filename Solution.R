@@ -92,3 +92,4 @@ loanData <- mutate(loanData,revol_util = as.double(strsplit(revol_util,"%")))
 # emp_length : converting to numbers by combining <1 years and 1 years and dropping the texts and symbols
 # Correct different representations of NA
 loanData[which(loanData$emp_length == "n/a"),"emp_length"] <- 0
+# Convert to number
