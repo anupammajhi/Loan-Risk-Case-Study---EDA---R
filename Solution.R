@@ -89,3 +89,4 @@ loanData <- mutate(loanData,int_rate = as.double(strsplit(int_rate,"%")))
 # revol_util : Correcting value to have numbers instead of string with %
 loanData <- mutate(loanData,revol_util = as.double(strsplit(revol_util,"%")))
 
+# emp_length : converting to numbers by combining <1 years and 1 years and dropping the texts and symbols
