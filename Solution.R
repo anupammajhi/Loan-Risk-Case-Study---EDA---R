@@ -82,3 +82,10 @@ names(which(lapply(loanData,function(x){sum(is.na(x))}) > 0))
 # No need to impute the NA's. NA is correctly assigned
 
 #---- .. Treat Values to be useful for analysis .. ----
+
+# int_rate : Correcting value to have numbers instead of string with %
+loanData <- mutate(loanData,int_rate = as.double(strsplit(int_rate,"%")))
+
+# revol_util : Correcting value to have numbers instead of string with %
+loanData <- mutate(loanData,revol_util = as.double(strsplit(revol_util,"%")))
+
