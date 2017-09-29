@@ -102,3 +102,4 @@ CorrectDate <- function(x){
   yy <- formatC(as.numeric(substr(x,8,9)),width=2,flag=0)
   if(yy<=17){
     x <- paste(substr(x,1,7),"20",as.character(yy),sep = "")
+  }else{
