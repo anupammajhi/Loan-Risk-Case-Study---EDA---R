@@ -72,3 +72,11 @@ lapply(loanData,function(x){
   {
     return(unique(x))
   }
+}
+) # No spelling issues or other inconsistency
+
+#---- .. Find and Impute NA values .. ----
+
+names(which(lapply(loanData,function(x){sum(is.na(x))}) > 0))
+
+# No need to impute the NA's. NA is correctly assigned
