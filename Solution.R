@@ -104,3 +104,9 @@ CorrectDate <- function(x){
     x <- paste(substr(x,1,7),"20",as.character(yy),sep = "")
   }else{
     x <- paste(substr(x,1,7),"19",as.character(yy),sep = "")
+  }
+  
+  as.Date(x,"%d-%b-%Y")
+}
+
+loanData$issue_d <- as.Date(sapply(loanData$issue_d,CorrectDate),origin = '1970-01-01')
