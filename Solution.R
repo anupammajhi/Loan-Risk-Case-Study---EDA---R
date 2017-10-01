@@ -137,3 +137,4 @@ loanData <- mutate(loanData,issue_m_name = format(issue_d,"%b"))
 loanData <- mutate(loanData,days_since_first_credit_line =  Sys.Date() - earliest_cr_line)
 loanData$days_since_first_credit_line <- as.numeric(loanData$days_since_first_credit_line)
 
+
