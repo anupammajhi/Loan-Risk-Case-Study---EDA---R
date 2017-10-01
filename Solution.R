@@ -117,3 +117,4 @@ loanData$earliest_cr_line <- as.Date(sapply(loanData$earliest_cr_line,CorrectDat
 
 # annual_inc_rank : Creating new bucket based on income with bin size 25000. Higher the Level, higher the income.
 # Data driven Metric
+loanData$annual_inc_level <- NA
