@@ -129,3 +129,11 @@ loanData <- mutate(loanData,default_loss = (installment*as.numeric(str_replace(t
 loanData[which(loanData$loan_status != "CHARGED OFF"),"default_loss"] <- NA 
 
 # issue_m_name : Loan issued month Name
+# Data driven metric
+loanData <- mutate(loanData,issue_m_name = format(issue_d,"%b"))
+
+# days_since_first_credit_line : number of days since first credit line. This gives an idea about a person's experience with loan.
+# Data driven metric
+loanData <- mutate(loanData,days_since_first_credit_line =  Sys.Date() - earliest_cr_line)
+loanData$days_since_first_credit_line <- as.numeric(loanData$days_since_first_credit_line)
+
