@@ -145,3 +145,11 @@ loanData$days_since_first_credit_line <- as.numeric(loanData$days_since_first_cr
 library(ggplot2)     
 
 #---- .. Univariate Analysis .. ----
+
+#---- .... Unordered Categorical Variables .... ----      
+
+# home_ownership summary
+summary(as.factor(loanData$home_ownership))
+
+# plot for home_ownership
+loanData %>%
