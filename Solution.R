@@ -127,3 +127,4 @@ loanData$annual_inc_level <- sapply(loanData$annual_inc, function(x){
 loanData <- mutate(loanData,default_loss = (installment*as.numeric(str_replace(term," MONTHS","")))-total_pymnt)
 #NA for Fully Paid and Current
 loanData[which(loanData$loan_status != "CHARGED OFF"),"default_loss"] <- NA 
+
