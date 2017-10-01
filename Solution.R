@@ -128,3 +128,4 @@ loanData <- mutate(loanData,default_loss = (installment*as.numeric(str_replace(t
 #NA for Fully Paid and Current
 loanData[which(loanData$loan_status != "CHARGED OFF"),"default_loss"] <- NA 
 
+# issue_m_name : Loan issued month Name
