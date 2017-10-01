@@ -110,3 +110,10 @@ CorrectDate <- function(x){
 }
 
 loanData$issue_d <- as.Date(sapply(loanData$issue_d,CorrectDate),origin = '1970-01-01')
+loanData$earliest_cr_line <- as.Date(sapply(loanData$earliest_cr_line,CorrectDate),origin = '1970-01-01')
+
+
+#---- .. Derived Variables .. ----
+
+# annual_inc_rank : Creating new bucket based on income with bin size 25000. Higher the Level, higher the income.
+# Data driven Metric
