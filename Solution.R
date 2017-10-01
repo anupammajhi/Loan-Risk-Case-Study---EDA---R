@@ -138,3 +138,9 @@ loanData <- mutate(loanData,days_since_first_credit_line =  Sys.Date() - earlies
 loanData$days_since_first_credit_line <- as.numeric(loanData$days_since_first_credit_line)
 
 
+
+#======= Data Analysis ========
+
+
+library(ggplot2)     
+
