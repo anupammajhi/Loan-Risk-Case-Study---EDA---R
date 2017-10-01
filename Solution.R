@@ -118,3 +118,12 @@ loanData$earliest_cr_line <- as.Date(sapply(loanData$earliest_cr_line,CorrectDat
 # annual_inc_rank : Creating new bucket based on income with bin size 25000. Higher the Level, higher the income.
 # Data driven Metric
 loanData$annual_inc_level <- NA
+loanData$annual_inc_level <- sapply(loanData$annual_inc, function(x){
+  return(paste(formatC(ceiling(x/25000),width=3,flag = 0),"L",sep=""))
+})
+
+# default_loss : Measure of loss incurred by a person who defaulted on loan
+# Business & data driven Metric
+loanData <- mutate(loanData,default_loss = (installment*as.numeric(str_replace(term," MONTHS","")))-total_pymnt)
+#NA for Fully Paid and Current
+loanData[which(loanData$loan_status != "CHARGED OFF"),"default_loss"] <- NA 
