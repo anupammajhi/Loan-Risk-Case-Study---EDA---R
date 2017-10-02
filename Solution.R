@@ -153,3 +153,4 @@ summary(as.factor(loanData$home_ownership))
 
 # plot for home_ownership
 loanData %>%
+  ggplot(aes(x=home_ownership)) + 
