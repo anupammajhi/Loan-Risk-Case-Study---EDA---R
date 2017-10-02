@@ -173,3 +173,11 @@ loanData %>%
   geom_text(aes(y= ..count.., label = ..count..),stat="count",vjust=-0.5)+
   coord_cartesian(ylim = c(0, 18000)) +
   labs(x = "Verification Status", 
+       y="Count", 
+       title = "Verification Status Frequency")
+#maximum people don't have verified income
+
+
+# purpose : reason the borrower is taking loan
+summary(as.factor(loanData$purpose))
+
