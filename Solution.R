@@ -164,3 +164,12 @@ loanData %>%
 
 
 # verification_status of income of the borrower summary
+summary(as.factor(loanData$verification_status))
+
+# plot for verification_status
+loanData %>%
+  ggplot(aes(x=verification_status)) + 
+  geom_bar() +
+  geom_text(aes(y= ..count.., label = ..count..),stat="count",vjust=-0.5)+
+  coord_cartesian(ylim = c(0, 18000)) +
+  labs(x = "Verification Status", 
