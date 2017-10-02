@@ -163,3 +163,4 @@ loanData %>%
 # people staying in rented houses tend to take more loans, followed by people having morgaged house
 
 
+# verification_status of income of the borrower summary
