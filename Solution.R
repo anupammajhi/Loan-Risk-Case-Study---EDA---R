@@ -181,3 +181,4 @@ loanData %>%
 # purpose : reason the borrower is taking loan
 summary(as.factor(loanData$purpose))
 
+# plot for purpose
