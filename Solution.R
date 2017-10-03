@@ -191,3 +191,4 @@ loanData %>%
   geom_line(aes(y=..count..,group = 1),stat="count",color="blue",size=1.2)+
   labs(x = "Purpose", 
        y="Count", 
+       title = "Purpose Rank-Frequency")
