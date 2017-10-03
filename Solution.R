@@ -190,3 +190,4 @@ loanData %>%
   theme(axis.text.x = element_text(angle = 90, hjust = 1))+
   geom_line(aes(y=..count..,group = 1),stat="count",color="blue",size=1.2)+
   labs(x = "Purpose", 
+       y="Count", 
