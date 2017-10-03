@@ -220,3 +220,4 @@ loanData$issue_m_name <- factor(loanData$issue_m_name,levels = c("Jan","Feb","Ma
 summary(loanData$issue_m_name)
 
 loanData %>%
+  ggplot(aes(x=issue_m_name,y=..count..),stat="count") + 
