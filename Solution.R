@@ -203,3 +203,4 @@ loanData %>%
   ggplot(aes(x=reorder(addr_state,addr_state,function(x)length(x)),y=..count..),stat="count") + 
   geom_bar(fill="#aaaaaa") +
   geom_text(aes(label =..count..),stat="count",hjust=-0.3,angle=90,size=3.2)+
+  coord_cartesian(ylim = c(0, 8000)) +
