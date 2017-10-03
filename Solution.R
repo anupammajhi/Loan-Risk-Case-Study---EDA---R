@@ -201,3 +201,4 @@ summary(as.factor(loanData$addr_state))
 # plot for addr_state
 loanData %>%
   ggplot(aes(x=reorder(addr_state,addr_state,function(x)length(x)),y=..count..),stat="count") + 
+  geom_bar(fill="#aaaaaa") +
