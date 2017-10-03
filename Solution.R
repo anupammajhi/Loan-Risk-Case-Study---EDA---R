@@ -194,3 +194,9 @@ loanData %>%
        title = "Purpose Rank-Frequency")
 #Debt consolidation and credit card are the top purposes for taking loan
 
+
+# addr_state : borrower's address state : summary
+summary(as.factor(loanData$addr_state))
+
+# plot for addr_state
+loanData %>%
