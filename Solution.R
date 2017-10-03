@@ -213,3 +213,10 @@ loanData %>%
 
 
 
+#---- .... Ordered Categorical Variables .... ----   
+
+#issue_m_name : Loan issue month name irrespective of year
+loanData$issue_m_name <- factor(loanData$issue_m_name,levels = c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"))
+summary(loanData$issue_m_name)
+
+loanData %>%
