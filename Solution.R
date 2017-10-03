@@ -193,3 +193,4 @@ loanData %>%
        y="Count", 
        title = "Purpose Rank-Frequency")
 #Debt consolidation and credit card are the top purposes for taking loan
+
