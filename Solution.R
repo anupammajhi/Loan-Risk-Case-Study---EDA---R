@@ -223,3 +223,9 @@ loanData %>%
   ggplot(aes(x=issue_m_name,y=..count..),stat="count") + 
   geom_bar(fill="#aaaaaa") +
   geom_text(aes(label =..count..),stat="count",hjust=-0.3,angle=90,size=3.2)+
+  coord_cartesian(ylim = c(0, 8000)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = -0.1))+
+  geom_line(aes(y=..count..,group = 1),stat="count",color="blue",size=1.2,alpha=0.4)+
+  labs(x = "Month", 
+       y="Count", 
+       title = "Month Time-Frequency")
