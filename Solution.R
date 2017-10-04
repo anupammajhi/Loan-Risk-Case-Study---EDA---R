@@ -229,3 +229,4 @@ loanData %>%
   labs(x = "Month", 
        y="Count", 
        title = "Month Time-Frequency")
+# There is an increasing trend of taking loan over time
