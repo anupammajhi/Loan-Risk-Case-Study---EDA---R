@@ -239,3 +239,4 @@ summary(loanData$issue_d)
 loanData %>%
   ggplot(aes(x=issue_d,y=..count..),stat="count") + 
   geom_bar(fill="#aaaaaa") +
+  geom_text(aes(label =..count..),stat="count",hjust=-0.3,angle=90,size=3.2)+
