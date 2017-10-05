@@ -231,3 +231,10 @@ loanData %>%
        title = "Month Time-Frequency")
 # There is an increasing trend of taking loan over time
 
+
+#issue_d : Loan issue month with year
+summary(loanData$issue_d)
+
+#plot for issue_d
+loanData %>%
+  ggplot(aes(x=issue_d,y=..count..),stat="count") + 
