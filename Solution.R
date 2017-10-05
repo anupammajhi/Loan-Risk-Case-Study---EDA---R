@@ -249,3 +249,9 @@ loanData %>%
 # There is an increasing trend of borrowing loan over time
 # there was a drop in mid-2008, probably because of market crash
 
+
+#annual_inc_level : level of annual income categorised in buckets of 25000
+summary(as.factor(loanData$annual_inc_level))
+
+#plot for annual_inc_level
+loanData %>%
