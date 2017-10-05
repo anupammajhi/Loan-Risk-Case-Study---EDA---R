@@ -248,3 +248,4 @@ loanData %>%
        title = "Time-Frequency")
 # There is an increasing trend of borrowing loan over time
 # there was a drop in mid-2008, probably because of market crash
+
