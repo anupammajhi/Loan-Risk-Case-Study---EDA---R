@@ -277,3 +277,11 @@ loanData %>%
   geom_text(aes(label = scales::percent((..count..)/sum(..count..))),stat="count",vjust=-0.3,size=4)+
   coord_cartesian(ylim = c(0, 35000)) +
   theme(axis.text.x = element_text(angle = 90, vjust = -0.1))+
+  labs(x = "Loan Status", 
+       y="Count", 
+       title = "Loan Status")
+#14.2% of loans have defaulted and contributed to loss.
+
+
+#grade : grade of loan based on mainly interest rate
+summary(as.factor(loanData$grade))
