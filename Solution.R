@@ -295,3 +295,4 @@ loanData %>%
   theme(axis.text.x = element_text(angle = 90, vjust = -0.1))+
   labs(x = "Grade", 
        y="Count", 
+       title = "Grade Frequency - Based on Interest rate")
