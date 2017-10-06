@@ -294,3 +294,4 @@ loanData %>%
   coord_cartesian(ylim = c(0, 15000)) +
   theme(axis.text.x = element_text(angle = 90, vjust = -0.1))+
   labs(x = "Grade", 
+       y="Count", 
