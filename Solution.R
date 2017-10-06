@@ -303,3 +303,9 @@ loanData %>%
 summary(as.factor(loanData$sub_grade))
 
 #plot for sub-grade
+loanData %>%
+  ggplot(aes(x=sub_grade,y=..count..),stat="count") + 
+  geom_bar(fill="#aaaaaa") +
+  geom_text(aes(label = (..count..)),stat="count",hjust=-0.1,size=3,angle = 90)+
+  coord_cartesian(ylim = c(0, 3500)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = -0.1))+
