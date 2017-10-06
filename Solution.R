@@ -315,3 +315,4 @@ loanData %>%
 # Higher the sub-grade of loan, the number of loans go down
 
 
+#term : tenure of the loan
