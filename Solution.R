@@ -271,3 +271,9 @@ loanData %>%
 summary(as.factor(loanData$loan_status))
 
 #plot for loan_status
+loanData %>%
+  ggplot(aes(x=loan_status,y=..count..),stat="count") + 
+  geom_bar(fill="#aaaaaa") +
+  geom_text(aes(label = scales::percent((..count..)/sum(..count..))),stat="count",vjust=-0.3,size=4)+
+  coord_cartesian(ylim = c(0, 35000)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = -0.1))+
