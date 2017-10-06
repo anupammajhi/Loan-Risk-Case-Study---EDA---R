@@ -296,3 +296,10 @@ loanData %>%
   labs(x = "Grade", 
        y="Count", 
        title = "Grade Frequency - Based on Interest rate")
+# Higher the grade of loan, the number of loans go down
+
+
+#sub-grade : further drilled down grade
+summary(as.factor(loanData$sub_grade))
+
+#plot for sub-grade
