@@ -309,3 +309,9 @@ loanData %>%
   geom_text(aes(label = (..count..)),stat="count",hjust=-0.1,size=3,angle = 90)+
   coord_cartesian(ylim = c(0, 3500)) +
   theme(axis.text.x = element_text(angle = 90, vjust = -0.1))+
+  labs(x = "Sub-Grade", 
+       y="Count", 
+       title = "Sub-Grade Frequency - Based on Interest rate")
+# Higher the sub-grade of loan, the number of loans go down
+
+
