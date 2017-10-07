@@ -324,3 +324,10 @@ loanData %>%
   geom_bar() +
   geom_text(aes(y= ..count.., label = ..count..),stat="count",vjust=-0.5)+
   coord_cartesian(ylim = c(0, 30000)) +
+  labs(x = "Term", 
+       y="Count", 
+       title = "Term Frequency") 
+#36 months term is more popular
+
+
+#delinq_2yrs : In 2 years, number of delinquences by borrower
