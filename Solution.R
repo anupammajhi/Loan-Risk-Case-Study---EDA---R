@@ -316,3 +316,11 @@ loanData %>%
 
 
 #term : tenure of the loan
+summary(as.factor(loanData$term))
+
+#plot for term
+loanData %>%
+  ggplot(aes(x=term)) + 
+  geom_bar() +
+  geom_text(aes(y= ..count.., label = ..count..),stat="count",vjust=-0.5)+
+  coord_cartesian(ylim = c(0, 30000)) +
