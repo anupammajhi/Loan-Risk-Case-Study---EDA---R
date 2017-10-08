@@ -331,3 +331,4 @@ loanData %>%
 
 
 #delinq_2yrs : In 2 years, number of delinquences by borrower
+summary(as.factor(loanData$delinq_2yrs))
