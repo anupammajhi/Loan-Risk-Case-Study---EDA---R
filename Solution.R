@@ -343,3 +343,11 @@ loanData %>%
        y="Count", 
        title = "Delinquencies in last 2 years") 
 #most people have low or no delinquencies in last 2 years
+
+
+#emp_length : number of years employed
+summary(as.factor(loanData$emp_length))
+
+loanData %>%
+  ggplot(aes(x=emp_length)) + 
+  geom_bar() +
