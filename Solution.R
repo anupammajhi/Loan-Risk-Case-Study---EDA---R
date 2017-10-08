@@ -342,3 +342,4 @@ loanData %>%
   labs(x = "Delinquencies in last 2 years", 
        y="Count", 
        title = "Delinquencies in last 2 years") 
+#most people have low or no delinquencies in last 2 years
