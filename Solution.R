@@ -341,3 +341,4 @@ loanData %>%
   coord_cartesian(ylim = c(0, 40000)) +
   labs(x = "Delinquencies in last 2 years", 
        y="Count", 
+       title = "Delinquencies in last 2 years") 
