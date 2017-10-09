@@ -363,3 +363,4 @@ loanData %>%
 
 #---- .... Quantitative Variables .... ----          
 
+#Function to calculate median and quantiles based on loan status
