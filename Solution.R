@@ -370,3 +370,9 @@ print(summary(loanData[which(loanData$loan_status == "FULLY PAID"),x]))
 print("CHARGED OFF")
 print(summary(loanData[which(loanData$loan_status == "CHARGED OFF"),x]))
 print("CURRENT")
+print(summary(loanData[which(loanData$loan_status == "CURRENT"),x]))
+}
+
+
+# Loan Status based on Loan Amount requested
+Loan_Status_Summary("loan_amnt")
