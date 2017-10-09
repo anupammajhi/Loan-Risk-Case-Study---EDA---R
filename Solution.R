@@ -364,3 +364,9 @@ loanData %>%
 #---- .... Quantitative Variables .... ----          
 
 #Function to calculate median and quantiles based on loan status
+Loan_Status_Summary <- function(x){
+print("FULLY PAID")
+print(summary(loanData[which(loanData$loan_status == "FULLY PAID"),x]))
+print("CHARGED OFF")
+print(summary(loanData[which(loanData$loan_status == "CHARGED OFF"),x]))
+print("CURRENT")
