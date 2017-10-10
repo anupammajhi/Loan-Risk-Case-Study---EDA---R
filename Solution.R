@@ -419,3 +419,4 @@ loanData %>%
 # Loan status based on monthly debt to income ratio. Higher dti means higher debt than income 
 Loan_Status_Summary("dti")
 
+loanData %>%
