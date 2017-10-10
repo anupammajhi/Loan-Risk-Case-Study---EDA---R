@@ -401,3 +401,4 @@ Loan_Status_Summary("int_rate")
 
 loanData %>%
   ggplot(aes(y=int_rate)) +
+  geom_boxplot(aes(x=loan_status),width=0.6)+
