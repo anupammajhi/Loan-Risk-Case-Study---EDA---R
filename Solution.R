@@ -437,3 +437,4 @@ loanData %>%
 
 
 #revol_bal : amount of balance revolving after certain amount is repayed.
+Loan_Status_Summary("revol_bal")
