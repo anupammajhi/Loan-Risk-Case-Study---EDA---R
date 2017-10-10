@@ -428,3 +428,4 @@ loanData %>%
 
 # loan status based on delinq_2yrs
 Loan_Status_Summary("delinq_2yrs")
+
