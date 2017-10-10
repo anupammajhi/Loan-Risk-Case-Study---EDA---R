@@ -402,3 +402,4 @@ Loan_Status_Summary("int_rate")
 loanData %>%
   ggplot(aes(y=int_rate)) +
   geom_boxplot(aes(x=loan_status),width=0.6)+
+  stat_summary(geom="text", fun.y=quantile,aes(x=loan_status,label=sprintf("%1.1f", ..y..)),position=position_nudge(x=0.2), size=3.5,vjust = -0.5)
