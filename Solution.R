@@ -459,3 +459,4 @@ loanData %>%
 Loan_Status_Summary("total_acc")
 
 loanData %>%
+  ggplot(aes(y=total_acc)) +
