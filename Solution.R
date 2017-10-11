@@ -448,3 +448,4 @@ loanData %>%
 
 #revol_util : percentage utilization of revolving balance
 Loan_Status_Summary("revol_util")
+
