@@ -500,3 +500,10 @@ loanData %>%
 qnt <- quantile(loanData$annual_inc, probs=c(.25, .75), na.rm = T)
 caps <- quantile(loanData$annual_inc, probs=c(.05, .95), na.rm = T)
 H <- 1.5 * IQR(loanData$annual_inc, na.rm = T)
+loanData$annual_inc[loanData$annual_inc < (qnt[1] - H)] <- caps[1]
+loanData$annual_inc[loanData$annual_inc > (qnt[2] + H)] <- caps[2]
+
+Loan_Status_Summary("annual_inc")
+
+loanData %>%
+  ggplot(aes(y=annual_inc)) +
