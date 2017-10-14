@@ -507,3 +507,4 @@ Loan_Status_Summary("annual_inc")
 
 loanData %>%
   ggplot(aes(y=annual_inc)) +
+  geom_boxplot(aes(x=loan_status),width=0.6)+
