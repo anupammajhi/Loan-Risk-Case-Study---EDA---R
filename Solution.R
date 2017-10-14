@@ -521,3 +521,9 @@ continuous_vars <- loanData[,c("loan_amnt","funded_amnt","int_rate","installment
 cormat <- round(cor(continuous_vars),2)
 
 get_lower_tri<-function(cormat){
+  cormat[upper.tri(cormat)] <- NA
+  return(cormat)
+}
+# Get upper triangle of the correlation matrix
+get_upper_tri <- function(cormat){
+  cormat[lower.tri(cormat)]<- NA
