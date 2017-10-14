@@ -514,3 +514,10 @@ loanData %>%
 
 #---- .. Bivariate Analysis .. ----
 
+# Correlation among variables
+
+continuous_vars <- loanData[,c("loan_amnt","funded_amnt","int_rate","installment","annual_inc","dti","inq_last_6mths","open_acc","pub_rec","revol_bal","total_acc","total_pymnt","total_rec_prncp","total_rec_int","days_since_first_credit_line")]
+
+cormat <- round(cor(continuous_vars),2)
+
+get_lower_tri<-function(cormat){
