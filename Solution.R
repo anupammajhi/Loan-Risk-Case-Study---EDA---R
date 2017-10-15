@@ -567,3 +567,4 @@ ggplot(melted_cormat, aes(Var2, Var1, fill = value))+
     legend.direction = "horizontal")+
   guides(fill = guide_colorbar(barwidth = 7, barheight = 1,
                                title.position = "top", title.hjust = 0.5))
+
