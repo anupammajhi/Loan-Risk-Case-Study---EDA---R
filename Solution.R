@@ -560,3 +560,10 @@ ggplot(melted_cormat, aes(Var2, Var1, fill = value))+
     axis.title.y = element_blank(),
     panel.grid.major = element_blank(),
     panel.border = element_blank(),
+    panel.background = element_blank(),
+    axis.ticks = element_blank(),
+    legend.justification = c(1, 0),
+    legend.position = c(0.6, 0.7),
+    legend.direction = "horizontal")+
+  guides(fill = guide_colorbar(barwidth = 7, barheight = 1,
+                               title.position = "top", title.hjust = 0.5))
