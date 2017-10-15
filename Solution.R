@@ -542,3 +542,4 @@ reorder_cormat <- function(cormat){
 library(reshape2)
 cormat <- reorder_cormat(cormat)
 
+upper_tri <- get_upper_tri(cormat)
