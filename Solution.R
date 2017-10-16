@@ -586,3 +586,9 @@ loanData %>%
 loanData %>%
   filter(loan_status != "CURRENT") %>%
 ggplot(aes(x=grade,fill=loan_status)) +
+  geom_bar()+
+  geom_text(aes(y=..count..,label=..count..),stat = "count", position=position_stack(vjust = 0.5))
+
+loanData %>%
+  filter(loan_status != "CURRENT") %>%
+  ggplot(aes(x=grade,fill=loan_status)) +
