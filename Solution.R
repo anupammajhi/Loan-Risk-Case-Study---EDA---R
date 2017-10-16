@@ -608,3 +608,10 @@ loanData %>%
 #verification status vs loan status
 loanData %>%
   filter(loan_status != "CURRENT") %>%
+  ggplot(aes(x=verification_status,fill=loan_status)) +
+  geom_bar(position = position_fill()) 
+
+#purpose vs loan status
+loanData %>%
+  filter(loan_status != "CURRENT") %>%
+  ggplot(aes(x=purpose,fill=loan_status)) +
