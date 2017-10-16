@@ -593,3 +593,9 @@ loanData %>%
   filter(loan_status != "CURRENT") %>%
   ggplot(aes(x=grade,fill=loan_status)) +
   geom_bar(position = position_fill()) 
+#with increasing grade, charged off percentage also increases
+
+
+
+#term vs loan status
+loanData %>%
