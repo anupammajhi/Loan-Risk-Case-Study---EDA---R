@@ -592,3 +592,4 @@ ggplot(aes(x=grade,fill=loan_status)) +
 loanData %>%
   filter(loan_status != "CURRENT") %>%
   ggplot(aes(x=grade,fill=loan_status)) +
+  geom_bar(position = position_fill()) 
