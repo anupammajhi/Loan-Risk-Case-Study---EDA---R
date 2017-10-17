@@ -613,3 +613,4 @@ loanData %>%
 
 #purpose vs loan status
 loanData %>%
+  filter(loan_status != "CURRENT") %>%
