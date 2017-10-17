@@ -620,5 +620,3 @@ loanData %>%
   theme(axis.text.x = element_text(angle = 90, vjust = -0.1))
 
 
-
-
