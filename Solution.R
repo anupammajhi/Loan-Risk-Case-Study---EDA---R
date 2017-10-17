@@ -612,3 +612,4 @@ loanData %>%
   geom_bar(position = position_fill()) 
 
 #purpose vs loan status
+loanData %>%
