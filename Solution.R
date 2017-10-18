@@ -615,3 +615,4 @@ loanData %>%
 loanData %>%
   filter(loan_status != "CURRENT") %>%
   ggplot(aes(x=purpose,fill=loan_status)) +
+  geom_bar()+
