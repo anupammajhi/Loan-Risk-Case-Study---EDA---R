@@ -618,7 +618,3 @@ loanData %>%
   geom_bar()+
   geom_text(aes(y=..count..,label=..count..),stat = "count", position=position_stack(vjust = 0.5),size=2.5)+
   theme(axis.text.x = element_text(angle = 90, vjust = -0.1))
-
-
-
-
