@@ -58,3 +58,24 @@ In other words, the company wants to understand the **driving factors (or driver
 
 To develop your understanding of the domain, you are advised to independently research a little about risk analytics (understanding the types of variables and their significance should be enough).
 
+ 
+
+## Data Understanding
+
+ 
+
+Download the dataset and data dictionary from this page.
+
+ 
+
+## Results Expected
+
+1. Write all your code in one well-commented R file; briefly mention the insights and observations from the analysis 
+2. Present the overall approach of the analysis in a presentation 
+   - Mention the problem statement and the analysis approach briefly 
+   - Explain the results of univariate, bivariate analysis etc. in business terms
+   - Include visualisations and summarise the most important results in the presentation
+
+ 
+
+You need to submit the following two components:
