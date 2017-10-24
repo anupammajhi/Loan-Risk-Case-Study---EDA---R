@@ -79,3 +79,6 @@ Download the dataset and data dictionary from this page.
  
 
 You need to submit the following two components:
+
+- **R commented file**: Should include detailed comments and should not contain unnecessary pieces of code 
+- **PPT:**  Make a PPT to present your analysis to the chief data scientist of your company (and thus you should include both the technical and the business aspects). The PPT should be concise, clear, and to the point. **Submit the PPT after converting into the PDF format.**
